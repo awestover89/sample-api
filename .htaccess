@@ -1,0 +1,7 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+RewriteEngine on 
+
+RewriteCond $1 !^(index\.php|flash|charts|graphs|images|javascripts|styles)
+RewriteRule ^(.*)$ index.php
